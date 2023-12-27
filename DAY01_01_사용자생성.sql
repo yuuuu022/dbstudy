@@ -27,8 +27,8 @@
     3. F5                      : 전체 스크립트가 실행된다.
 */
 
-CREATE USER C##GD IDENTIFIED BY 1111;
-GRANT DBA TO C##GD;
+--CREATE USER C##GD IDENTIFIED BY 1111;
+--GRANT DBA TO C##GD;
 
 /*
     계정 삭제하기
@@ -38,12 +38,12 @@ GRANT DBA TO C##GD;
         DROP USER 계정이름;
 */
 
-DROP USER C##GD;
+-- DROP USER C##GD;
 
 /*
     GD 계정을 만드는 전체 스크립트
 */
-ALTER SESSION SET "_ORACLE_SCRIFT" = TRUE; --C## 제거를 위해서
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE; --C## 제거를 위해서
 DROP USER GD CASCADE;
 CREATE USER GD IDENTIFIED BY 1111;
 GRANT DBA TO GD;
