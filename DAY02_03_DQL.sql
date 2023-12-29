@@ -55,12 +55,12 @@ SELECT *
     WHERE DEPT_NO = 1; -- DEPT_NO 칼럼은 UNIQUE하므로 조회 결과는 1개 이하이다.
 -- 5. 부서 테이블에서 지역이 '서울'인 부서 정보를 조회하시오.
 SELECT *
-    FROM DEPARTMENT_T
+     FROM DEPARTMENT_T
     WHERE LOCATION = '서울'; LOCATION 칼럼은 UNIQUE하지 않기 때문에 조회 결과는 2개 이상이 가능하다.
 
 -- 6. 사원 테이블에서 기본급이 3,000,000 이상인 사원을 조회하시오.
 SELECT *
-    FROM EMPLOYEE_T
+     FROM EMPLOYEE_T
     WHERE SALARY >=3000000;
     
 -- 7. 사원 테이블에서 기본급이 2000000 ~ 3000000 인 사원을 조회하시오.
